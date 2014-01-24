@@ -13,7 +13,8 @@ I would like to release version 1.0 in the near future, once more features are i
 ####Ideas for future expansion:            
 	 [] Change display color based on market uptick/downtick.                   
 	 [] Dimming backlight during certain timeslots (While the human is sleeping)          
-	 [] Recovery from dropped wireless connection / API call failure.                  
+	 [] Recovery from dropped wireless connection / API call failure.
+	 [] Switching between BTC and mBTC. (Manual at first)
 	 [] Support for LTC + DOGE + altcoin price tickers (Controllable by button press)         
 	 [] Sound notification based on adjustable thresholds.
 	 [] EMA 10/21 strategy notification.
