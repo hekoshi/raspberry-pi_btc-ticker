@@ -1,6 +1,10 @@
 Raspberry-Pi-BTC-Ticker
 =======================
-
+####What is this?
+This is a python script designed to run on a Raspberry pi, and display the current Bitcoin/US Dollar exchange rate on an attached LCD screen. This saves time and allows for at a glance viewing.
+	
+		
+	
 ####Background
 I got tired of pulling up my browser and navigating to a graphing site everytime I wanted to check the BTC/USD rate. There had to be be a better solution. I tried some browser addons but they were clunky and took up precious screen space, then I realized an external LCD would be perfect for displaying this kind of information. I ordered a [16x2 RGB LCD kit from Adafruit.com](http://www.adafruit.com/products/1109), soldered it together (Look at those sexy solder joints!), then wrote some python code for my Raspberry Pi that polls the MtGox API every 30s (Limit with standard API), and displays it on the screen in the format shown below:
 
