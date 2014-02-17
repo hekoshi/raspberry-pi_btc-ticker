@@ -51,7 +51,7 @@ def BTC_btce():
                 final_price = current_price
         return final_price
         return prefix
-
+        
 def BTC_bitstamp():
         btce = json.load(urllib2.urlopen('https://www.bitstamp.net/api/ticker/'))
         # No error handling response with bitstamp API
