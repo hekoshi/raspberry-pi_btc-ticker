@@ -1,20 +1,31 @@
 Raspberry-Pi-BTC-Ticker
 =======================
+####What is this?
+This is a python script designed to run on a Raspberry pi, and display the current Bitcoin/US Dollar exchange rate on an attached LCD screen. This saves time and allows for at a glance viewing.
+	
+		
+	
+####Background
+I got tired of pulling up my browser and navigating to a graphing site everytime I wanted to check the BTC/USD rate. There had to be be a better solution. I tried some browser addons but they were clunky and took up precious screen space, then I realized an external LCD would be perfect for displaying this kind of information. I ordered a [16x2 RGB LCD kit from Adafruit.com](http://www.adafruit.com/products/1109), soldered it together (Look at those sexy solder joints!), then wrote some python code for my Raspberry Pi that polls the MtGox API every 30s (Limit with standard API), and displays it on the screen in the format shown below:
 
-####Purpose
-One day I got tired of pulling up bitcoin.clarkmoody or MtGox every time I wanted to check the BTC/USD rate, so I ordered a [16x2 RGB LCD kit from adafruit](http://www.adafruit.com/products/1109), soldered it up, then wrote some python code for my RPi that displays the current rate from MtGox, called every 30s (Limit with standard Mtgox API). I find myself checking it every few minutes when I'm home, which could be a good or bad thing.
+	| YYYY-MM-DD HH:MM |
+	| BTC/USD: $XXX.XX |
+
+####Status
+I would like to release version 1.0 in the near future, once more features are implimented and the performance and error handling is tested. I plan on including more thorough documentation as well as templates for adding new API feeds.
 
 ####Ideas for future expansion:            
-	- Change display color based on market uptick/downtick.                   
-	- Dimming backlight during certain timeslots (While the human is sleeping)          
-	- Recovery from dropped wireless connection / API call failure.                  
-	- Support for LTC + DOGE + altcoin price tickers (Controllable by button press)         
-	- Sound notification based on adjustable thresholds.
-	- EMA 10/21 strategy notification.
-	- Change RGB LCD to a VFD display to reduce glare/light pollution.  
-	
+	 [] Change display color based on market uptick/downtick.                   
+	 [] Dimming backlight during certain timeslots (While the human is sleeping)          
+	 [] Recovery from dropped wireless connection / API call failure.
+	 [] Switching between BTC and mBTC. (Manual at first)
+	 [] Support for LTC + DOGE + altcoin price tickers (Controllable by button press)         
+	 [] Sound notification based on adjustable thresholds.
+	 [] EMA 10/21 strategy notification.
+	 [] Change RGB LCD to a VFD display to reduce glare/light pollution.  
+
 ####Psychological Effects
-Aside from the alien blue glow at 3AM, and knowing the price of bitcoin nearly 24/7, surprisingly little has changed. Knowing the EXACT price of bitcoin is reassuring when trading, but I find the data is difficult to keep in my memory, so I think some kind of 1 hour/24 hour averaging would be beneficial as a second menu option.
+Aside from getting woken up by an alien blue glow at 3AM, and seeing the exchange rate on my desk all the time, surprisingly little has changed. Knowing the exact rate is useful when trading, but I find the data is difficult to remember, so I can see the use for a 1hr/24hr averaging system, and having the backlight change from green/red on uptick/downtick.
 
 Will report back if I experience a singularity with the blockchain.
 
