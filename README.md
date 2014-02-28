@@ -11,6 +11,10 @@ I got tired of pulling up my browser and navigating to a graphing site everytime
 	| YYYY-MM-DD HH:MM |
 	| BTC/USD: $XXX.XX |
 
+####Shameless donation address
+If this script helped you out or inspired you, I'll gladly accept a few of your mBTC :). Donations will encourage me to work on this more, write razor sharp code, and develop cool new features.           
+**1MJDPZFEFA8tEzDb2gFdU6RSRVHfGGh9Ad**
+
 ####Status
 I would like to release version 1.0 in the near future, once more features are implimented and the performance and error handling is tested. I plan on including more thorough documentation as well as templates for adding new API feeds.
 
